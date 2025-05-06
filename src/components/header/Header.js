@@ -8,7 +8,6 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  openSource,
   blogSection,
   talkSection,
   achievementSection,
@@ -18,7 +17,6 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
-  const viewOpenSource = true; // نخليه ظاهر علشان نستخدمه كبروجيكتس
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
@@ -52,11 +50,9 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewOpenSource && (
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-          )}
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
@@ -81,7 +77,7 @@ function Header() {
             <a href="#contact">Contact Me</a>
           </li>
           <li>
-            <a><ToggleSwitch /></a>
+            <span><ToggleSwitch /></span>
           </li>
         </ul>
       </header>
