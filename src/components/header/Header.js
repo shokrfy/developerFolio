@@ -1,3 +1,4 @@
+
 import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
@@ -17,7 +18,7 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
+  const viewOpenSource = true; // نخليه ظاهر علشان نستخدمه كبروجيكتس
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
@@ -53,7 +54,7 @@ function Header() {
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {viewAchievement && (
@@ -80,10 +81,7 @@ function Header() {
             <a href="#contact">Contact Me</a>
           </li>
           <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+            <a><ToggleSwitch /></a>
           </li>
         </ul>
       </header>
