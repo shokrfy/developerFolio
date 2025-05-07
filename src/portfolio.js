@@ -1,8 +1,3 @@
-
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
 
@@ -24,7 +19,7 @@ const greeting = {
   subTitle: emoji(
     "Electronics & Flutter Developer with a passion for smart systems and real-world tech projects like Smart Glove for the hearing impaired 🤖🧤"
   ),
-  resumeLink: "Shokrfy_s_Resume (1).pdf",
+  resumeLink: "shokrfy's Resume.pdf",
   displayGreeting: true
 };
 
